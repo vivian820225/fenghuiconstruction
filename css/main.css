@@ -285,7 +285,7 @@ p {
 
 @media screen and (max-width: 768px) {
   .Sec0home {
-    padding: 10rem 0 4rem 0;
+    padding: 4rem 0;
   }
   .Sec0home .Sec0home_content {
     -o-object-fit: contain;
