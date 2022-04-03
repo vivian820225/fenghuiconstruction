@@ -373,7 +373,7 @@ p {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
-    padding: 1rem 2rem;
+    padding: 2rem;
   }
   .Sec1 .swiper {
     -webkit-box-flex: 0;
@@ -392,6 +392,12 @@ p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .Sec1 .d_flex {
+    padding: 0 2rem;
   }
 }
 

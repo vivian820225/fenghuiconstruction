@@ -83,7 +83,7 @@
   .Sec1 {
     .d_flex {
       flex-direction: column-reverse;
-      padding: 1rem 2rem;
+      padding: 2rem;
     }
 
     .swiper {
@@ -97,6 +97,14 @@
       padding-top: 1rem;
       margin-bottom: 1rem;
       align-items: center;
+    }
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .Sec1 {
+    .d_flex {
+      padding: 0 2rem;
     }
   }
 }
