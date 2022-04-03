@@ -21,13 +21,14 @@
 .Sec0home {
   height: 100vh;
   max-height: 100%;
-  padding: 8rem 0 4rem 0;
   background-image: url(../images/desktop/s0/s0-bg.jpg);
   background-position: center center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  .d_flex {
+    padding: 8rem 0 4rem 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -43,6 +44,9 @@
         max-width: 60%;
       }
     }
+    .d_flex {
+      padding: 4rem 0;
+    }
   }
 }
 
@@ -51,8 +55,6 @@
   .d_flex {
     align-items: center;
     justify-content: center;
-    height: 100%;
-    max-height: 100%;
     padding: 2rem 4rem;
   }
 
