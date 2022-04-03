@@ -248,10 +248,16 @@ p {
 }
 
 .section {
-  max-height: 100vh;
+  height: 100%;
+  max-height: 100%;
   overflow: hidden;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.Sec_height {
+  height: 100%;
+  max-height: 100%;
 }
 
 .Sec_img {
@@ -263,8 +269,8 @@ p {
 }
 
 .Sec0home {
-  height: 100vh;
-  max-height: 100vh;
+  height: 100%;
+  max-height: 100%;
   padding: 8rem 0 4rem 0;
   background-image: url(../images/desktop/s0/s0-bg.jpg);
   background-position: center center;
@@ -301,9 +307,6 @@ p {
 
 .Sec1 {
   padding: 2rem 4rem;
-  max-height: 100vh;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 .Sec1 .d_flex {
@@ -378,14 +381,13 @@ p {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right bottom;
-  max-height: 100vh;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 .Sec2 .d_flex {
-  height: 100vh;
-  max-height: 100vh;
+  height: 100%;
+  max-height: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -418,7 +420,6 @@ p {
 
 .Sec3 {
   padding: 2rem 0;
-  max-height: 100vh;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -474,8 +475,8 @@ p {
     padding: 1rem 0;
   }
   .Sec3 .d_flex {
-    height: 100vh;
-    max-height: 100vh;
+    height: 100%;
+    max-height: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -525,8 +526,8 @@ p {
     display: none;
   }
   .Sec4_img {
-    height: 100vh;
-    max-height: 100vh;
+    height: 100%;
+    max-height: 100%;
     background-image: url(../images/desktop/s4/sec4img01.jpg);
     background-position: center center;
   }
@@ -537,8 +538,8 @@ p {
     display: none;
   }
   .Sec4_img {
-    height: 100vh;
-    max-height: 100vh;
+    height: 100%;
+    max-height: 100%;
     background-image: url(../images/desktop/s4/sec4img01.jpg);
     background-position: center center;
   }
@@ -556,9 +557,6 @@ p {
 .Sec5 {
   padding: 2rem 4rem;
   color: #727171;
-  max-height: 100vh;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 .Sec5 .route {
@@ -611,8 +609,8 @@ p {
     -webkit-box-flex: 0;
         -ms-flex: 0;
             flex: 0;
-    height: 100vh;
-    max-height: 100vh;
+    height: 100%;
+    max-height: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -651,9 +649,6 @@ p {
 .Sec6 {
   padding: 2rem 4rem;
   color: #727171;
-  max-height: 100vh;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 .Sec6 .route {
@@ -706,8 +701,8 @@ p {
     -webkit-box-flex: 0;
         -ms-flex: 0;
             flex: 0;
-    height: 100vh;
-    max-height: 100vh;
+    height: 100%;
+    max-height: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -752,9 +747,6 @@ p {
 .Sec7 {
   padding: 0 4rem;
   color: #727171;
-  max-height: 100vh;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 .Sec7 .swiper-slide {
@@ -791,8 +783,8 @@ p {
     -webkit-box-flex: 0;
         -ms-flex: 0;
             flex: 0;
-    height: 100vh;
-    max-height: 100vh;
+    height: 100%;
+    max-height: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -881,7 +873,6 @@ p {
 @media screen and (max-width: 768px) {
   .Sec8 {
     padding: 1rem 0;
-    max-height: 100vh;
   }
   .Sec8 .slide {
     padding: 0 2rem;

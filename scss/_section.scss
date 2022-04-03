@@ -1,7 +1,13 @@
 .section {
-  max-height: 100vh;
+  height: 100%;
+  max-height: 100%;
   overflow: hidden;
   box-sizing: border-box;
+}
+
+.Sec_height {
+  height: 100%;
+  max-height: 100%;
 }
 
 .Sec_img {
@@ -13,8 +19,8 @@
 
 // 主視覺
 .Sec0home {
-  height: 100vh;
-  max-height: 100vh;
+  height: 100%;
+  max-height: 100%;
   padding: 8rem 0 4rem 0;
   background-image: url(../images/desktop/s0/s0-bg.jpg);
   background-position: center center;
@@ -43,8 +49,6 @@
 // 建築品牌
 .Sec1 {
   padding: 2rem 4rem;
-  max-height: 100vh;
-  box-sizing: border-box;
 
   .d_flex {
     align-items: center;
@@ -95,12 +99,11 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right bottom;
-  max-height: 100vh;
   box-sizing: border-box;
 
   .d_flex {
-    height: 100vh;
-    max-height: 100vh;
+    height: 100%;
+    max-height: 100%;
     align-items: center;
   }
 
@@ -131,7 +134,6 @@
 // 凱薩飯店
 .Sec3 {
   padding: 2rem 0;
-  max-height: 100vh;
   box-sizing: border-box;
 
   .cesar_logo {
@@ -167,8 +169,8 @@
   .Sec3 {
     padding: 1rem 0;
     .d_flex {
-      height: 100vh;
-      max-height: 100vh;
+      height: 100%;
+      max-height: 100%;
       flex-direction: column;
       justify-content: flex-start;
     }
@@ -212,8 +214,8 @@
     display: none;
   }
   .Sec4_img {
-    height: 100vh;
-    max-height: 100vh;
+    height: 100%;
+    max-height: 100%;
     background-image: url(../images/desktop/s4/sec4img01.jpg);
     background-position: center center;
   }
@@ -224,8 +226,8 @@
     display: none;
   }
   .Sec4_img {
-    height: 100vh;
-    max-height: 100vh;
+    height: 100%;
+    max-height: 100%;
     background-image: url(../images/desktop/s4/sec4img01.jpg);
     background-position: center center;
   }
@@ -244,8 +246,6 @@
 .Sec5 {
   padding: 2rem 4rem;
   color: #727171;
-  max-height: 100vh;
-  box-sizing: border-box;
 
   .route {
     object-fit: contain;
@@ -278,8 +278,8 @@
 
     .d_flex {
       flex: 0;
-      height: 100vh;
-      max-height: 100vh;
+      height: 100%;
+      max-height: 100%;
       flex-direction: column;
       justify-content: center;
       align-items: center;
@@ -310,8 +310,6 @@
 .Sec6 {
   padding: 2rem 4rem;
   color: #727171;
-  max-height: 100vh;
-  box-sizing: border-box;
 
   .route {
     object-fit: contain;
@@ -344,8 +342,8 @@
 
     .d_flex {
       flex: 0;
-      height: 100vh;
-      max-height: 100vh;
+      height: 100%;
+      max-height: 100%;
       flex-direction: column;
       justify-content: center;
       align-items: center;
@@ -376,8 +374,6 @@
 .Sec7 {
   padding: 0 4rem;
   color: #727171;
-  max-height: 100vh;
-  box-sizing: border-box;
 
   .swiper-slide {
     display: flex;
@@ -405,8 +401,8 @@
 
     .d_flex {
       flex: 0;
-      height: 100vh;
-      max-height: 100vh;
+      height: 100%;
+      max-height: 100%;
       flex-direction: column;
       justify-content: center;
       align-items: center;
@@ -473,7 +469,6 @@
 @media screen and (max-width: 768px) {
   .Sec8 {
     padding: 1rem 0;
-    max-height: 100vh;
 
     .slide {
       padding: 0 2rem;
