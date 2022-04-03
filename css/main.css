@@ -286,6 +286,7 @@ p {
 @media screen and (max-width: 768px) {
   .Sec0home {
     padding: 4rem 0;
+    max-height: 100%;
   }
   .Sec0home .Sec0home_content {
     -o-object-fit: contain;
@@ -345,9 +346,6 @@ p {
 }
 
 @media screen and (max-width: 768px) {
-  .Sec1 {
-    padding: 0 2rem;
-  }
   .Sec1 .d_flex {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -604,9 +602,6 @@ p {
 }
 
 @media screen and (max-width: 768px) {
-  .Sec5 {
-    padding: 0 2rem;
-  }
   .Sec5 .d_flex {
     -webkit-box-flex: 0;
         -ms-flex: 0;
@@ -699,9 +694,6 @@ p {
 }
 
 @media screen and (max-width: 768px) {
-  .Sec6 {
-    padding: 0 2rem;
-  }
   .Sec6 .d_flex {
     -webkit-box-flex: 0;
         -ms-flex: 0;
@@ -779,9 +771,6 @@ p {
 }
 
 @media screen and (max-width: 768px) {
-  .Sec7 {
-    padding: 0 2rem;
-  }
   .Sec7 .swiper-button-next,
   .Sec7 .swiper-button-prev {
     -webkit-transform: translateY(-2.4rem);
@@ -880,7 +869,6 @@ p {
 
 @media screen and (max-width: 768px) {
   .Sec8 {
-    padding: 1rem 0;
     max-height: 100vh;
   }
   .Sec8 .slide {
@@ -964,6 +952,10 @@ p {
       -ms-flex: 1 1 40%;
           flex: 1 1 40%;
   max-width: 480px;
+}
+
+.intro a {
+  color: #fff;
 }
 
 .table_wrapper {
