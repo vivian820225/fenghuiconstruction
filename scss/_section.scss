@@ -27,7 +27,6 @@
 @media screen and (max-width: 768px) {
   .Sec0home {
     padding: 4rem 0;
-    max-height: 100%;
     .Sec0home_content {
       object-fit: contain;
 
@@ -71,6 +70,7 @@
 
 @media screen and (max-width: 768px) {
   .Sec1 {
+    padding: 0 2rem;
     .d_flex {
       flex-direction: column-reverse;
     }
@@ -274,6 +274,8 @@
 
 @media screen and (max-width: 768px) {
   .Sec5 {
+    padding: 0 2rem;
+
     .d_flex {
       flex: 0;
       height: 100vh;
@@ -338,6 +340,8 @@
 
 @media screen and (max-width: 768px) {
   .Sec6 {
+    padding: 0 2rem;
+
     .d_flex {
       flex: 0;
       height: 100vh;
@@ -392,6 +396,8 @@
 
 @media screen and (max-width: 768px) {
   .Sec7 {
+    padding: 0 2rem;
+
     .swiper-button-next, 
     .swiper-button-prev {
       transform: translateY(-2.4rem);
@@ -466,6 +472,7 @@
 
 @media screen and (max-width: 768px) {
   .Sec8 {
+    padding: 1rem 0;
     max-height: 100vh;
 
     .slide {
