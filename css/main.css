@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  font-family: "微軟正黑體", "Microsoft JhengHei", "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-family: "微軟正黑體", "Microsoft JhengHei", "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -145,6 +145,15 @@ p {
   .para {
     font-size: 14px;
     line-height: 1.6;
+  }
+}
+
+@media (max-width: 520px) {
+  .title {
+    font-size: 22px;
+  }
+  .sub_title {
+    font-size: 15px;
   }
 }
 

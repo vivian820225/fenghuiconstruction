@@ -116,6 +116,16 @@ p {
 }
 
 
+@media (max-width: 520px) {
+  .title {
+    font-size: 22px;
+  }
+  .sub_title {
+    font-size: 15px;
+  }
+}
+
+
 @import "_fullpage.scss";
 @import "_swiper.scss";
 @import "_section.scss";
