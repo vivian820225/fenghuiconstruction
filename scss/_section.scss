@@ -1,6 +1,7 @@
 .section {
   max-height: 100vh;
   overflow: hidden;
+  box-sizing: border-box;
 }
 
 .Sec_img {
@@ -13,6 +14,7 @@
 // 主視覺
 .Sec0home {
   height: 100vh;
+  max-height: 100vh;
   padding: 8rem 0 4rem 0;
   background-image: url(../images/desktop/s0/s0-bg.jpg);
   background-position: center center;
@@ -41,6 +43,8 @@
 // 建築品牌
 .Sec1 {
   padding: 2rem 4rem;
+  max-height: 100vh;
+  box-sizing: border-box;
 
   .d_flex {
     align-items: center;
@@ -55,7 +59,6 @@
   .content_box {
     flex: 1 1 40%;
     max-width: 680px;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -79,7 +82,6 @@
     .content_box {
       flex: 1 1 100%;
       max-width: 100%;
-      height: auto;
       padding: 0;
       margin-bottom: 1rem;
       align-items: center;
@@ -93,9 +95,12 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right bottom;
+  max-height: 100vh;
+  box-sizing: border-box;
 
   .d_flex {
     height: 100vh;
+    max-height: 100vh;
     align-items: center;
   }
 
@@ -126,6 +131,8 @@
 // 凱薩飯店
 .Sec3 {
   padding: 2rem 0;
+  max-height: 100vh;
+  box-sizing: border-box;
 
   .cesar_logo {
     object-fit: contain;
@@ -146,7 +153,6 @@
   .content_box {
     flex: 1 1 30%;
     max-width: 520px;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -161,6 +167,7 @@
     padding: 1rem 0;
     .d_flex {
       height: 100vh;
+      max-height: 100vh;
       flex-direction: column;
       justify-content: flex-start;
     }
@@ -178,7 +185,6 @@
     .content_box {
       flex: 1 1 100%;
       max-width: 100%;
-      height: auto;
       padding: 0 2rem;
       margin-bottom: 1rem;
       align-items: center;
@@ -206,6 +212,7 @@
   }
   .Sec4_img {
     height: 100vh;
+    max-height: 100vh;
     background-image: url(../images/desktop/s4/sec4img01.jpg);
     background-position: right center;
   }
@@ -217,6 +224,7 @@
   }
   .Sec4_img {
     height: 100vh;
+    max-height: 100vh;
     background-image: url(../images/desktop/s4/sec4img01.jpg);
     background-position: right center;
   }
@@ -235,6 +243,8 @@
 .Sec5 {
   padding: 2rem 4rem;
   color: #727171;
+  max-height: 100vh;
+  box-sizing: border-box;
 
   .route {
     object-fit: contain;
@@ -253,7 +263,6 @@
   .content_box {
     flex: 1 1 40%;
     max-width: 680px;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -269,6 +278,7 @@
     .d_flex {
       flex: 0;
       height: 100vh;
+      max-height: 100vh;
       flex-direction: column;
       justify-content: center;
       align-items: center;
@@ -299,6 +309,8 @@
 .Sec6 {
   padding: 2rem 4rem;
   color: #727171;
+  max-height: 100vh;
+  box-sizing: border-box;
 
   .route {
     object-fit: contain;
@@ -317,7 +329,6 @@
   .content_box {
     flex: 1 1 40%;
     max-width: 680px;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -333,6 +344,7 @@
     .d_flex {
       flex: 0;
       height: 100vh;
+      max-height: 100vh;
       flex-direction: column;
       justify-content: center;
       align-items: center;
@@ -353,7 +365,6 @@
       order: 3;
       flex: 0 1 auto;
       max-width: 100%;
-      height: auto;
       padding: 0;
       align-items: center;
     }
@@ -364,12 +375,14 @@
 .Sec7 {
   padding: 0 4rem;
   color: #727171;
+  max-height: 100vh;
+  box-sizing: border-box;
 
   .swiper-slide {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
     .sub_title {
       margin-top: 2rem;
     }
@@ -384,9 +397,15 @@
   .Sec7 {
     padding: 0 2rem;
 
+    .swiper-button-next, 
+    .swiper-button-prev {
+      transform: translateY(-2.4rem);
+    }
+
     .d_flex {
       flex: 0;
       height: 100vh;
+      max-height: 100vh;
       flex-direction: column;
       justify-content: center;
       align-items: center;
@@ -410,6 +429,115 @@
       height: auto;
       padding: 0;
       align-items: center;
+    }
+  }
+}
+
+// 團隊
+.Sec8 {
+  color: #fff;
+  padding: 0 4rem;
+
+  .vertical_write {
+    display: flex;
+    align-items: center;
+    writing-mode: vertical-lr;
+    margin-right: 1rem;
+  }
+
+  .info {
+    max-width: 35%;
+    margin-right: 2rem;
+  }
+
+  .info_container {
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    .profile {
+      margin-right: 1rem;
+      margin-bottom: 1rem;
+
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Sec8 {
+    padding: 1rem 0;
+    max-height: 100vh;
+
+    .slide {
+      padding: 0 2rem;
+    }
+
+    .fp-controlArrow.fp-next {
+      height: calc(50vh + 16px);
+      right: calc(50% - 7rem);
+      background-size: auto 20px;
+      background-position: center bottom;
+      opacity: 1;
+    }
+
+    .fp-controlArrow.fp-prev {
+      height: calc(50vh + 16px);
+      left: calc(50% - 7rem);
+      background-size: auto 20px;
+      background-position: center bottom;
+      opacity: 1;
+    }
+
+    .d_md_block {
+      padding-bottom: 2rem;
+    }
+
+    .content_wrapper {
+      margin-bottom: 1rem;
+    }
+
+    .content {
+      flex: 1;
+      margin-right: 1rem;
+
+      .sub_title {
+        text-align: left;
+        line-height: 1.5;
+        font-size: 17px;
+      }
+
+      .para {
+        font-size: 13px;
+      }
+    }
+
+    .profile {
+      max-height: 210px;
+    }
+
+    .title_wrapper {
+      margin-top: 1rem;
+
+      .sub_title {
+        margin: 0;
+        position: absolute;
+        bottom: 2.4rem;
+      }
+
+      .arrow {
+        width: 16px;
+        height: 16px;
+      }
+    }
+
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Sec8 {
+    .profile {
+      max-height: 160px;
     }
   }
 }
