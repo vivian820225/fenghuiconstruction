@@ -251,10 +251,6 @@ p {
   }
 }
 
-#fullpage {
-  height: 100%;
-}
-
 .section {
   height: 100%;
   max-height: 100%;
@@ -277,7 +273,7 @@ p {
 }
 
 .Sec0home {
-  height: 100%;
+  height: 100vh;
   max-height: 100%;
   padding: 8rem 0 4rem 0;
   background-image: url(../images/desktop/s0/s0-bg.jpg);
@@ -359,7 +355,7 @@ p {
 
 @media screen and (max-width: 768px) {
   .Sec1 {
-    padding: 0 2rem;
+    padding: 2rem;
   }
   .Sec1 .d_flex {
     -webkit-box-orient: vertical;
@@ -379,6 +375,7 @@ p {
             flex: 0 1 auto;
     max-width: 100%;
     padding: 0;
+    padding-top: 1rem;
     margin-bottom: 1rem;
     -webkit-box-align: center;
         -ms-flex-align: center;
