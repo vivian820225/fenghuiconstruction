@@ -135,6 +135,7 @@
   box-sizing: border-box;
 
   .cesar_logo {
+    max-height: 120px;
     object-fit: contain;
     margin-bottom: 4rem;
   }
@@ -214,7 +215,7 @@
     height: 100vh;
     max-height: 100vh;
     background-image: url(../images/desktop/s4/sec4img01.jpg);
-    background-position: right center;
+    background-position: center center;
   }
 }
 
@@ -226,7 +227,7 @@
     height: 100vh;
     max-height: 100vh;
     background-image: url(../images/desktop/s4/sec4img01.jpg);
-    background-position: right center;
+    background-position: center center;
   }
 }
 
@@ -450,12 +451,17 @@
     margin-right: 2rem;
   }
 
+  .work {
+    max-height: 80vh;
+  }
+
   .info_container {
     flex-wrap: wrap;
     margin-bottom: 2rem;
     .profile {
       margin-right: 1rem;
       margin-bottom: 1rem;
+      max-height: 320px;
 
       img {
         max-width: 100%;
