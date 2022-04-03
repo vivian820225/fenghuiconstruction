@@ -328,6 +328,12 @@ p {
   }
 }
 
+@media screen and (max-width: 520px) {
+  .Sec0home {
+    padding: 0;
+  }
+}
+
 .Sec1 .d_flex {
   -webkit-box-align: center;
       -ms-flex-align: center;
