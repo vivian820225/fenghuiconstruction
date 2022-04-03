@@ -48,13 +48,12 @@
 
 // 建築品牌
 .Sec1 {
-  padding: 2rem 4rem;
-
   .d_flex {
     align-items: center;
     justify-content: center;
     height: 100%;
     max-height: 100%;
+    padding: 2rem 4rem;
   }
 
   .swiper {
@@ -76,9 +75,9 @@
 
 @media screen and (max-width: 768px) {
   .Sec1 {
-    padding: 2rem;
     .d_flex {
       flex-direction: column-reverse;
+      padding: 2rem;
     }
 
     .swiper {
