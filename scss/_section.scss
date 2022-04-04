@@ -607,8 +607,13 @@
     .work {
       width: 100%;
       max-width: 100%;
-      max-height: 50vh;
+      max-height: 280px;
       object-fit: cover;
+    }
+
+    .fp-controlArrow.fp-next,
+    .fp-controlArrow.fp-prev {
+      opacity: 0;
     }
   }
 }
