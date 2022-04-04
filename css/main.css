@@ -349,8 +349,8 @@ p {
 
 .Sec1 .swiper {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 50%;
-          flex: 1 1 50%;
+      -ms-flex: 1 1 45%;
+          flex: 1 1 45%;
   max-width: 850px;
 }
 
