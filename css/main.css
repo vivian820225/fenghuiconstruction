@@ -990,8 +990,11 @@ p {
 }
 
 @media screen and (max-width: 480px) {
+  .Sec8 {
+    padding: 0;
+  }
   .Sec8 .profile {
-    max-height: 140px;
+    max-height: 120px;
   }
 }
 
