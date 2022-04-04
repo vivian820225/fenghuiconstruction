@@ -597,8 +597,21 @@
 @media screen and (max-width: 480px) {
   .Sec8 {
     padding: 0;
+    .content_wrapper {
+      align-items: flex-start;
+    }
     .profile {
       max-height: 120px;
+    }
+    .para {
+      letter-spacing: -1px;
+    }
+
+    .work {
+      width: 100%;
+      max-width: 100%;
+      max-height: 50vh;
+      object-fit: cover;
     }
   }
 }
