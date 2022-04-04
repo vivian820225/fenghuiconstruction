@@ -38,12 +38,13 @@
 
 .call-to-action {
   flex: 1 1 60%;
-  max-width: 680px;
+  max-width: 710px;
 }
 
 .form_wrapper {
   max-width: 710px;
   margin: 0 auto;
+  padding-bottom: 2rem;
 
   .d_flex {
 
@@ -174,6 +175,9 @@
 @media (max-width: 768px) {
   .reservation {
     background: url(../images/mobile/s9/sec9img01.jpg) center center;
+    .call-to-action {
+      flex: 1 1 100%;
+    }
   }
 }
 

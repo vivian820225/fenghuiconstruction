@@ -1056,12 +1056,13 @@ p {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 60%;
           flex: 1 1 60%;
-  max-width: 680px;
+  max-width: 710px;
 }
 
 .form_wrapper {
   max-width: 710px;
   margin: 0 auto;
+  padding-bottom: 2rem;
 }
 
 .form_wrapper .d_flex {
@@ -1220,6 +1221,11 @@ p {
 @media (max-width: 768px) {
   .reservation {
     background: url(../images/mobile/s9/sec9img01.jpg) center center;
+  }
+  .reservation .call-to-action {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
   }
 }
 
