@@ -332,6 +332,7 @@ p {
 
 @media screen and (max-width: 520px) {
   .Sec0home {
+    height: 100%;
     padding: 0;
   }
 }
