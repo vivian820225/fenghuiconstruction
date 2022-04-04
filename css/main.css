@@ -290,7 +290,7 @@ p {
 
 .Sec0home {
   height: 100vh;
-  max-height: 100vh;
+  max-height: 100%;
   background-image: url(../images/desktop/s0/s0-bg.jpg);
   background-position: center center;
 }
