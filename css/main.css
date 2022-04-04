@@ -169,31 +169,30 @@ p {
   background: #ffffff;
 }
 
-.fp-controlArrow.fp-next {
-  background-image: url("../images/arrow-right.svg");
-  background-size: auto 60px;
-  background-repeat: no-repeat;
-  border: none;
-  width: 52px;
-  height: 150px;
-  opacity: 0.5;
-  right: 0;
-}
-
+.fp-controlArrow.fp-next,
 .fp-controlArrow.fp-prev {
-  background-image: url("../images/arrow-left.svg");
   background-size: auto 60px;
   background-repeat: no-repeat;
+  background-position: center;
   border: none;
   width: 52px;
   height: 150px;
   opacity: 0.5;
-  left: 0;
 }
 
 .fp-controlArrow.fp-next:hover,
 .fp-controlArrow.fp-prev:hover {
   opacity: 1;
+}
+
+.fp-controlArrow.fp-next {
+  background-image: url("../images/arrow-right.svg");
+  right: 0;
+}
+
+.fp-controlArrow.fp-prev {
+  background-image: url("../images/arrow-left.svg");
+  left: 0;
 }
 
 @media screen and (max-width: 1280px) {
