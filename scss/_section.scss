@@ -476,6 +476,18 @@
   }
 }
 
+@media screen and (max-width: 520px) {
+  .Sec7 {
+    .title {
+      margin-bottom: 0;
+    }
+    .swiper {
+      margin: 1rem auto;
+    }
+  }
+}
+
+
 // 團隊
 .Sec8 {
   color: #fff;

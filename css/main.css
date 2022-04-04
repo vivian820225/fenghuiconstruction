@@ -878,6 +878,15 @@ p {
   }
 }
 
+@media screen and (max-width: 520px) {
+  .Sec7 .title {
+    margin-bottom: 0;
+  }
+  .Sec7 .swiper {
+    margin: 1rem auto;
+  }
+}
+
 .Sec8 {
   color: #fff;
   padding: 0 4rem;
