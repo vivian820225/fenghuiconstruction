@@ -943,17 +943,14 @@ p {
     right: calc(50% - 7rem);
     background-size: auto 20px;
     background-position: center bottom;
-    opacity: 1;
+    opacity: 0;
   }
   .Sec8 .fp-controlArrow.fp-prev {
     height: calc(50vh + 16px);
     left: calc(50% - 7rem);
     background-size: auto 20px;
     background-position: center bottom;
-    opacity: 1;
-  }
-  .Sec8 .d_md_block {
-    padding-bottom: 2rem;
+    opacity: 0;
   }
   .Sec8 .content_wrapper {
     margin-bottom: 1rem;
@@ -979,7 +976,7 @@ p {
     margin-top: 1rem;
   }
   .Sec8 .title_wrapper .sub_title {
-    margin: 0;
+    margin: 0 1rem;
   }
   .Sec8 .title_wrapper .arrow {
     width: 16px;
@@ -1008,10 +1005,6 @@ p {
     max-height: 240px;
     -o-object-fit: cover;
        object-fit: cover;
-  }
-  .Sec8 .fp-controlArrow.fp-next,
-  .Sec8 .fp-controlArrow.fp-prev {
-    opacity: 0;
   }
 }
 
