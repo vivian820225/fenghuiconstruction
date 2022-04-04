@@ -1002,7 +1002,7 @@ p {
   .Sec8 .work {
     width: 100%;
     max-width: 100%;
-    max-height: 240px;
+    max-height: 260px;
     -o-object-fit: cover;
        object-fit: cover;
   }
