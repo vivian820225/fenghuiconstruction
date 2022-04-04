@@ -50,6 +50,7 @@
     }
     .d_flex {
       padding: 0;
+      justify-content: space-around;
     }
   }
 }
@@ -328,6 +329,17 @@
   }
 }
 
+@media screen and (max-width: 520px) {
+  .Sec5 {
+    .title {
+      margin-bottom: 0;
+    }
+    .swiper {
+      margin: 1rem auto;
+    }
+  }
+}
+
 // 交通
 .Sec6 {
   padding: 2rem 4rem;
@@ -391,6 +403,18 @@
     }
   }
 }
+
+@media screen and (max-width: 520px) {
+  .Sec6 {
+    .title {
+      margin-bottom: 0;
+    }
+    .swiper {
+      margin: 1rem auto;
+    }
+  }
+}
+
 
 // 商圈
 .Sec7 {

@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  font-family: "微軟正黑體", "Microsoft JhengHei", "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-family: "微軟正黑體", "Microsoft JhengHei", "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -325,6 +325,8 @@ p {
   }
   .Sec0home .d_flex {
     padding: 0;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
@@ -677,6 +679,15 @@ p {
   }
 }
 
+@media screen and (max-width: 520px) {
+  .Sec5 .title {
+    margin-bottom: 0;
+  }
+  .Sec5 .swiper {
+    margin: 1rem auto;
+  }
+}
+
 .Sec6 {
   padding: 2rem 4rem;
   color: #727171;
@@ -772,6 +783,15 @@ p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .Sec6 .title {
+    margin-bottom: 0;
+  }
+  .Sec6 .swiper {
+    margin: 1rem auto;
   }
 }
 
