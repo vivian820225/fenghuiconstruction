@@ -980,8 +980,6 @@ p {
   }
   .Sec8 .title_wrapper .sub_title {
     margin: 0;
-    position: absolute;
-    bottom: 2.4rem;
   }
   .Sec8 .title_wrapper .arrow {
     width: 16px;
