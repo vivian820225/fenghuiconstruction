@@ -248,7 +248,7 @@ p {
 @media screen and (max-width: 768px) {
   .swiper-button-next::after,
   .swiper-button-prev::after {
-    font-size: 28px;
+    font-size: 32px;
     -webkit-filter: drop-shadow(0px 0px 4px #00000052);
             filter: drop-shadow(0px 0px 4px #00000052);
   }
@@ -272,6 +272,20 @@ p {
   overflow: hidden;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  position: relative;
+}
+
+.section.border-bottom::after {
+  content: '';
+  display: block;
+  width: 80vw;
+  height: 2px;
+  background-color: #92B3C7;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .Sec_height {
@@ -511,6 +525,38 @@ p {
 
 .panorama-container {
   background-color: #92B3C7;
+}
+
+.toast {
+  padding: 8px 16px;
+  font-size: 13px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border-radius: 8px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  -webkit-transition: opacity .2s ease;
+  transition: opacity .2s ease;
+  z-index: 100;
+  opacity: 0;
+}
+
+.toast.active {
+  opacity: 1;
 }
 
 @media screen and (min-width: 1920px) {
@@ -756,8 +802,28 @@ p {
 }
 
 .Sec7 {
-  padding: 0 4rem;
+  padding: 0 2rem;
   color: #727171;
+}
+
+.Sec7 .swiper {
+  padding: 0 2.8rem;
+}
+
+.Sec7 .swiper-button-next {
+  right: 0;
+  color: #92B3C7;
+}
+
+.Sec7 .swiper-button-prev {
+  left: 0;
+  color: #92B3C7;
+}
+
+.Sec7 .swiper-button-next,
+.Sec7 .swiper-button-prev {
+  -webkit-transform: translateY(-2rem);
+          transform: translateY(-2rem);
 }
 
 .Sec7 .swiper-slide {
@@ -785,10 +851,19 @@ p {
   .Sec7 {
     padding: 0 2rem;
   }
+  .Sec7 .swiper {
+    padding: 0;
+  }
   .Sec7 .swiper-button-next,
   .Sec7 .swiper-button-prev {
-    -webkit-transform: translateY(-2.4rem);
-            transform: translateY(-2.4rem);
+    color: #fff;
+    -webkit-transform: translateY(-2rem);
+            transform: translateY(-2rem);
+  }
+  .Sec7 .swiper-button-next::after,
+  .Sec7 .swiper-button-prev::after {
+    -webkit-filter: initial;
+            filter: initial;
   }
   .Sec7 .d_flex {
     -webkit-box-flex: 0;

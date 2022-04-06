@@ -50,6 +50,17 @@ function init() {
     scrollHorizontally: true,
     normalScrollElements: "#google_map",
     navigation: true,
+    afterLoad: function (anchorLink, index) {
+      clearTimeout()
+      if (index == 4) {
+        if (window.innerWidth <= 768) {
+          $('#Sec4 .toast').addClass('active');
+          setTimeout(() => {
+            $('#Sec4 .toast').removeClass('active');
+          }, 2 * 1000);
+        }
+      }
+    }
   });
 }
 
@@ -124,7 +135,7 @@ $(document).ready(function () {
   const swiper_5 = new Swiper('#swiper_5', {
     loop: true,
     slidesPerView: 1,
-    spaceBetween: 10,
+    spaceBetween: 48,
     autoplay: {
       delay: 2500,
       disableOnInteraction: false,
@@ -136,11 +147,11 @@ $(document).ready(function () {
     breakpoints: {
       768: {
         slidesPerView: 2,
-        spaceBetween: 30,
+        spaceBetween: 48,
       },
       1024: {
         slidesPerView: 3,
-        spaceBetween: 30,
+        spaceBetween: 48,
       },
     },
   });
@@ -150,5 +161,4 @@ $(document).ready(function () {
       this.location.reload();
     });
   });
-  
 });
