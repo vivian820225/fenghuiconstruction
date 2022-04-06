@@ -368,120 +368,110 @@
 
     <!-- 基本資料 立即預約 -->
     <div class="section reservation">
-      <div class="Sec_height">
-        <div class="google_map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.6336203645415!2d121.43683911546327!3d25.046504843942934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb3c98635ea741299!2zMjXCsDAyJzQ3LjQiTiAxMjHCsDI2JzIwLjUiRQ!5e0!3m2!1szh-TW!2stw!4v1649051780520!5m2!1szh-TW!2stw" 
-            width="1920" height="400" style="border:0;" allowfullscreen loading="lazy">
-          </iframe>
-        </div>
-        <div class="d_flex">
-          <div class="intro">
-            <div class="table_wrapper">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th>
-                      <h3 class="title">基本資料</h3>
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>接待會館｜新北市泰山區坡雅路和莊泰路交叉口</td>
-                  </tr>
-                  <tr>
-                    <td>貴賓專線｜02 2296-2388</td>
-                  </tr>
-                  <tr>
-                    <td>投資興建｜豐滙建設開發股份有限公司</td>
-                  </tr>
-                  <tr>
-                    <td>建築設計｜呂建勳建築師事務所</td>
-                  </tr>
-                  <tr>
-                    <td>結構規劃｜築遠工程顧問有限公司</td>
-                  </tr>
-                  <tr>
-                    <td>景觀設計｜方極景觀有限公司</td>
-                  </tr>
-                  <tr>
-                    <td>公設設計｜元澤設計有限公司</td>
-                  </tr>
-                  <tr>
-                    <td>建築代銷｜海悅廣告股份有限公司</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+      <div class="d_flex">
+        <div class="intro">
+          <div class="table_wrapper">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>
+                    <h3 class="title">基本資料</h3>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>貴賓專線｜02 2296-2388</td>
+                </tr>
+                <tr>
+                  <td>投資興建｜豐滙建設開發股份有限公司</td>
+                </tr>
+                <tr>
+                  <td>建築設計｜呂建勳建築師事務所</td>
+                </tr>
+                <tr>
+                  <td>結構規劃｜築遠工程顧問有限公司</td>
+                </tr>
+                <tr>
+                  <td>景觀設計｜方極景觀有限公司</td>
+                </tr>
+                <tr>
+                  <td>公設設計｜元澤設計有限公司</td>
+                </tr>
+                <tr>
+                  <td>建築代銷｜海悅廣告股份有限公司</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-          <section class="call-to-action text-center" id="formtable">
-            <div class="container form_wrapper">
-              <div class="row">
-                <div class="col-md-12 mx-auto">
-                  <h2 class="mb-4 form_title">立即預約</h2>
-                </div>
-                <div class="col-md-12 mx-auto">
-                  <form>
-                    <div class="row mb_3 mb_md_0">
-                      <div class="col-md-12">
-                        <div class="form-row mb-1 mb-md-3">
-                          <input id="username" type="username" name="username" class="form-control form-control-lg d-block"
-                            placeholder="請輸入姓名">
-                        </div>
-                        <div class="form-row mb-1 mb-md-3">
-                          <input id="phone" type="tel" name="phone" maxlength="10"
+        </div>
+        <section class="call-to-action text-center" id="formtable">
+          <div class="container form_wrapper">
+            <div class="row">
+              <div class="col-md-12 mx-auto">
+                <h2 class="mb-4 form_title">立即預約</h2>
+              </div>
+              <div class="col-md-12 mx-auto">
+                <form>
+                  <div class="row mb_3 mb_md_0">
+                    <div class="col-md-12">
+                      <div class="form-row mb-1 mb-md-3">
+                        <input id="username" type="username" name="username" class="form-control form-control-lg d-block"
+                          placeholder="請輸入姓名">
+                      </div>
+                      <div class="form-row mb-1 mb-md-3">
+                        <input id="phone" type="tel" name="phone" maxlength="10"
+                          onKeyUp="value=value.replace(/[^\d]/g,'')" class="form-control form-control-lg d-block"
+                          placeholder="請輸入電話">
+                      </div>
+                    </div>
+                    <div class="col-md-12" id="zipcode3">
+                      <div class="form-row mb-1 mb-md-3">
+                        <input id="email" type="email" name="email" class="form-control form-control-lg d-block"
+                          placeholder="請輸入電子郵件">
+                      </div>
+                      <div class="form-row mb-1 mb-md-3">
+                        <div data-role="county" class="f3 w-100 no-gutters"></div>
+                      </div>
+                      <div class="form-row mb-1 mb-md-3">
+                        <div data-role="district" class="f4 w-100 no-gutters"></div>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-row mb-1 mb-md-3">
+                        <div class="d_flex">
+                          <input id="SmsVerifyCode" type="number" name="SmsVerifyCode"
                             onKeyUp="value=value.replace(/[^\d]/g,'')" class="form-control form-control-lg d-block"
-                            placeholder="請輸入電話">
-                        </div>
-                      </div>
-                      <div class="col-md-12" id="zipcode3">
-                        <div class="form-row mb-1 mb-md-3">
-                          <input id="email" type="email" name="email" class="form-control form-control-lg d-block"
-                            placeholder="請輸入電子郵件">
-                        </div>
-                        <div class="form-row mb-1 mb-md-3">
-                          <div data-role="county" class="f3 w-100 no-gutters"></div>
-                        </div>
-                        <div class="form-row mb-1 mb-md-3">
-                          <div data-role="district" class="f4 w-100 no-gutters"></div>
-                        </div>
-                      </div>
-                      <div class="col-md-12">
-                        <div class="form-row mb-1 mb-md-3">
-                          <div class="d_flex">
-                            <input id="SmsVerifyCode" type="number" name="SmsVerifyCode"
-                              onKeyUp="value=value.replace(/[^\d]/g,'')" class="form-control form-control-lg d-block"
-                              placeholder="請輸入驗證碼">
-                            <button type="button" class="btn btn-block btn_secondary" id="SendSmsVerifyCodeBtn"
-                              onClick="">獲取驗證碼</button>
-                          </div>
+                            placeholder="請輸入驗證碼">
+                          <button type="button" class="btn btn-block btn_secondary" id="SendSmsVerifyCodeBtn"
+                            onClick="">獲取驗證碼</button>
                         </div>
                       </div>
                     </div>
-    
-                    <div class="col-xl-12 mx-auto">
-                      <p class="text-left policy">你所登錄的個人資料將做為以下用途<br>
-                        (一)本網站所載之相關事項通知(二)客戶管理與服務(三)本公司行銷業務之推廣本案實際內容以現場公布為準</p>
-                      <div class="form-check">
-                        <p class="text-left">
-                          <label class="form-check-label">
-                            <input id="agree" name="agree" type="checkbox" class="form-check-input" checked>
-                            本人已知悉以上個人資料蒐集聲明事項<a href="https://www.hiyes.tw/Policy/Privacy" target="_blank">隱私權聲明</a>
-                          </label>
-                        </p>
-                      </div>
-    
+                  </div>
+  
+                  <div class="col-xl-12 mx-auto">
+                    <p class="text-left policy">你所登錄的個人資料將做為以下用途<br>
+                      (一)本網站所載之相關事項通知(二)客戶管理與服務(三)本公司行銷業務之推廣本案實際內容以現場公布為準</p>
+                    <div class="form-check">
+                      <p class="text-left">
+                        <label class="form-check-label">
+                          <input id="agree" name="agree" type="checkbox" class="form-check-input" checked>
+                          本人已知悉以上個人資料蒐集聲明事項<a href="https://www.hiyes.tw/Policy/Privacy" target="_blank">隱私權聲明</a>
+                        </label>
+                      </p>
                     </div>
-                    <div class="form-row">
-                      <a class="btn btn-block" data-name="btnSubmit"
-                        onClick="javascript:SendBooking();">送出表單</a>
-                    </div>
-                  </form>
-                </div>
+  
+                  </div>
+                  <div class="form-row">
+                    <a class="btn btn-block" data-name="btnSubmit"
+                      onClick="javascript:SendBooking();">送出表單</a>
+                  </div>
+                </form>
               </div>
             </div>
-          </section>
-        </div>
+          </div>
+        </section>
       </div>
     </div>
   </div>
