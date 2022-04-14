@@ -50,6 +50,10 @@ function init() {
     scrollHorizontally: true,
     normalScrollElements: "#google_map",
     navigation: true,
+    scrollOverflowOptions: {
+      click: false,
+      preventDefaultException: { tagName:/.*/ }
+    },
     afterLoad: function (anchorLink, index) {
       clearTimeout()
       if (index == 4) {
