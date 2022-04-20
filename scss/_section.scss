@@ -163,13 +163,13 @@
   }
 
   .swiper {
-    flex: 1 1 70%;
+    flex: 1 1 65%;
     max-width: 1280px;
     margin: 0;
   }
 
   .content_box {
-    flex: 1 1 30%;
+    flex: 1 1 35%;
     max-width: 520px;
     display: flex;
     flex-direction: column;
@@ -177,6 +177,28 @@
     align-items: flex-start;
     padding: 0 4rem 0 4rem;
     color: #fff;
+  }
+
+  .title {
+    font-size: 28px;
+    margin-bottom: 2rem;
+  }
+
+  .sub_title {
+    font-size: 24px;
+  }
+}
+
+
+@media screen and (max-width: 1280px) {
+  .Sec3 {
+    .title {
+      font-size: 24px;
+    }
+
+    .sub_title {
+      font-size: 20px;
+    }
   }
 }
 
@@ -207,11 +229,18 @@
       margin-bottom: 1rem;
       align-items: center;
     }
-    
-    .title,
+
+    .title {
+      font-size: 19px;
+      letter-spacing: -2px;
+      margin-bottom: 1rem;
+    }
+
     .sub_title {
+      font-size: 16px;
       letter-spacing: -2px;
     }
+
   }
 }
 
