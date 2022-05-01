@@ -42,15 +42,14 @@
   max-height: 100%;
   background-image: url(../images/desktop/s0/s0-bg.jpg);
   background-position: center center;
+  .Sec0home_content {
+    object-fit: contain;
+  }
   .d_flex {
     padding: 8rem 0 4rem 0;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }
-
-  .Sec0home_content:nth-of-type(1) {
-    margin-bottom: 6rem;
   }
 }
 
@@ -59,14 +58,7 @@
     padding: 4rem 0;
     background-image: url(../images/mobile/s0/s0-bg.jpg);
     .Sec0home_content {
-      object-fit: contain;
-
-      &:nth-of-type(1) {
-        max-width: 80%;
-      }
-      &:nth-of-type(2) {
-        max-width: 60%;
-      }
+      max-width: 60%;
     }
     .d_flex {
       padding: 0;
@@ -79,15 +71,6 @@
   .Sec0home {
     height: 100%;
     padding: 0;
-    .Sec0home_content {
-
-      &:nth-of-type(1) {
-        padding-top: 4rem;
-      }
-      &:nth-of-type(2) {
-        transform: translateY(2rem);
-      }
-    }
   }
 }
 
@@ -159,23 +142,24 @@
 
   .d_flex {
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
+    flex-direction: row-reverse;
+    padding: 2rem 4rem;
   }
 
   .swiper {
-    flex: 1 1 65%;
-    max-width: 1280px;
-    margin: 0;
+    flex: 1 1 40%;
+    max-width: 850px;
   }
 
   .content_box {
-    flex: 1 1 35%;
-    max-width: 520px;
+    flex: 1 1 40%;
+    max-width: 680px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 0 4rem 0 4rem;
+    padding: 0 48px;
     color: #fff;
   }
 
@@ -205,12 +189,6 @@
 @media screen and (max-width: 768px) {
   .Sec3 {
     padding: 1rem 0;
-    .d_flex {
-      height: 100%;
-      max-height: 100%;
-      flex-direction: column;
-      justify-content: flex-start;
-    }
 
     .cesar_logo {
       max-height: 48px;
@@ -218,14 +196,20 @@
       margin-bottom: 1rem;
     }
 
+    .d_flex {
+      flex-direction: column;
+      padding: 2rem;
+    }
+
     .swiper {
-      flex: 1 1 100%;
+      flex: 0 1 auto;
       max-width: 100%;
     }
     .content_box {
-      flex: 1 1 100%;
+      flex: 0 1 auto;
       max-width: 100%;
-      padding: 0 2rem;
+      padding: 0;
+      padding-top: 1rem;
       margin-bottom: 1rem;
       align-items: center;
     }
@@ -241,6 +225,14 @@
       letter-spacing: -2px;
     }
 
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .Sec3 {
+    .d_flex {
+      padding: 0 2rem;
+    }
   }
 }
 
