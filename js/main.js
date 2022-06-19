@@ -29,48 +29,16 @@ function checkImgOnload() {
   }
 }
 
-function init() {
-  $("#fullpage").fullpage({
-    anchors: [
-      "1stPage",
-      "2ndPage",
-      "3rdPage",
-      "4thPage",
-      "5thPage",
-      "6thPage",
-      "7thPage",
-      "8thPage",
-      "9thPage",
-      "10thPage",
-    ],
-    slidesNavigation: true,
-    loopHorizontal: false,
-    autoScrolling: true,
-    scrollOverflow: true,
-    scrollHorizontally: true,
-    normalScrollElements: "#google_map",
-    navigation: true,
-    scrollOverflowOptions: {
-      click: false,
-      preventDefaultException: { tagName:/.*/ }
-    },
-    afterLoad: function (anchorLink, index) {
-      clearTimeout()
-      if (index == 4) {
-        if (window.innerWidth <= 768) {
-          $('#Sec4 .toast').addClass('active');
-          setTimeout(() => {
-            $('#Sec4 .toast').removeClass('active');
-          }, 2 * 1000);
-        }
-      }
-    }
-  });
-}
-
 $(document).ready(function () {
   checkImgOnload();
-  init();
+
+  // 顯示提示
+  // if (window.innerWidth <= 768) {
+  //   $('#Sec4 .toast').addClass('active');
+  //   setTimeout(() => {
+  //     $('#Sec4 .toast').removeClass('active');
+  //   }, 2 * 1000);
+  // }
 
   const swiper_1 = new Swiper('#swiper_1', {
     loop: true,
