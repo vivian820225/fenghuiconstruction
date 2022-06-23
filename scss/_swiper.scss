@@ -11,18 +11,19 @@
 .swiper-button-next,
 .swiper-button-prev {
   color: #fff;
+  filter: drop-shadow(0 4px 4px rgba(0,0,0,0.3));
 }
 
 .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  border: solid 1px #92B3C7;
+  border: solid 1px #89898A;
   background: transparent;
   opacity: 1;
 }
 
 .swiper-pagination-bullet-active {
-  background: #92B3C7;
+  background: #89898A;
 }
 
 @media screen and (max-width: 768px) {
@@ -37,10 +38,10 @@
   .swiper-pagination-bullet {
     width: 10px;
     height: 10px;
-    border-color: #fff;
+    border-color: #89898A;
   }
 
   .swiper-pagination-bullet-active {
-    background: #fff;
+    background: #89898A;
   }
 }

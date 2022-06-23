@@ -1,0 +1,681 @@
+.section {
+  height: 100%;
+  min-height: 100vh;
+  max-height: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  &.border-bottom {
+    &::after {
+      content: '';
+      display: block;
+      width: 80vw;
+      height: 2px;
+      background-color: #92B3C7;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+.Sec_height {
+  height: 100%;
+  max-height: 100%;
+}
+
+.Sec_img {
+  flex: 1;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+}
+
+// 主視覺
+.Sec0home {
+  height: 100vh;
+  max-height: 100%;
+  background-image: url(../images/desktop/s0/s0-bg.jpg);
+  background-position: center center;
+  .Sec0home_content {
+    object-fit: contain;
+  }
+  .d_flex {
+    padding: 8rem 0 4rem 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Sec0home {
+    padding: 4rem 0;
+    background-image: url(../images/mobile/s0/s0-bg.jpg);
+    .Sec0home_content {
+      max-width: 60%;
+    }
+    .d_flex {
+      padding: 0;
+      justify-content: space-around;
+    }
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .Sec0home {
+    height: 100%;
+    padding: 0;
+  }
+}
+
+// 建築品牌
+.Sec1 {
+  .d_flex {
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 4rem;
+  }
+
+  .swiper {
+    flex: 1 1 40%;
+    max-width: 850px;
+  }
+
+  .content_box {
+    flex: 1 1 40%;
+    max-width: 680px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 48px;
+    color: #fff;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Sec1 {
+    .d_flex {
+      flex-direction: column-reverse;
+      padding: 2rem;
+    }
+
+    .swiper {
+      flex: 0 1 auto;
+      max-width: 100%;
+    }
+    .content_box {
+      flex: 0 1 auto;
+      max-width: 100%;
+      padding: 0;
+      padding-top: 1rem;
+      margin-bottom: 1rem;
+      align-items: center;
+    }
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .Sec1 {
+    .d_flex {
+      padding: 0 2rem;
+    }
+  }
+}
+
+// 凱薩飯店
+.Sec3 {
+  padding: 2rem 0;
+  box-sizing: border-box;
+
+  .cesar_logo {
+    max-height: 120px;
+    object-fit: contain;
+    margin-bottom: 4rem;
+  }
+
+  .d_flex {
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    padding: 2rem 4rem;
+  }
+
+  .swiper {
+    flex: 1 1 40%;
+    max-width: 850px;
+  }
+
+  .content_box {
+    flex: 1 1 40%;
+    max-width: 680px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 48px;
+    color: #fff;
+  }
+
+  .title {
+    font-size: 28px;
+    margin-bottom: 2rem;
+  }
+
+  .sub_title {
+    font-size: 24px;
+  }
+}
+
+
+@media screen and (max-width: 1280px) {
+  .Sec3 {
+    .title {
+      font-size: 24px;
+    }
+
+    .sub_title {
+      font-size: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Sec3 {
+    padding: 1rem 0;
+
+    .cesar_logo {
+      max-height: 48px;
+      width: auto;
+      margin-bottom: 1rem;
+    }
+
+    .d_flex {
+      flex-direction: column;
+      padding: 2rem;
+    }
+
+    .swiper {
+      flex: 0 1 auto;
+      max-width: 100%;
+    }
+    .content_box {
+      flex: 0 1 auto;
+      max-width: 100%;
+      padding: 0;
+      padding-top: 1rem;
+      margin-bottom: 1rem;
+      align-items: center;
+    }
+
+    .title {
+      font-size: 19px;
+      letter-spacing: -2px;
+      margin-bottom: 1rem;
+    }
+
+    .sub_title {
+      font-size: 16px;
+      letter-spacing: -2px;
+    }
+
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .Sec3 {
+    .d_flex {
+      padding: 0 2rem;
+    }
+  }
+}
+
+// 空拍
+.p360 {
+  height: 100%;
+}
+
+.panorama-container {
+  background-color: #92B3C7;
+}
+
+.toast {
+  padding: 8px 16px;
+  font-size: 13px;
+  background-color: rgba(0, 0, 0, .5);
+  color: #fff;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 4px rgba(0, 0, 0, .3);
+  transition: opacity .2s ease;
+  z-index: 100;
+  opacity: 0;
+
+  &.active {
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .view360.slide {
+    display: none;
+  }
+  .Sec4_img {
+    height: 100%;
+    max-height: 100%;
+    background-image: url(../images/desktop/s4/sec4img01.jpg);
+    background-position: center center;
+  }
+}
+
+@media (orientation: landscape) {
+  .view360.slide {
+    display: none;
+  }
+  .Sec4_img {
+    height: 100%;
+    max-height: 100%;
+    background-image: url(../images/desktop/s4/sec4img01.jpg);
+    background-position: center center;
+  }
+}
+
+@media (orientation: portrait) {
+  .view360.slide {
+    display: table;
+  }
+  .Sec4_img {
+   display: none;
+  }
+}
+
+// 計畫區
+.Sec5 {
+  padding: 2rem 4rem;
+  color: #727171;
+
+  .route {
+    max-width: 100%;
+    object-fit: contain;
+  }
+
+  .d_flex {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .swiper {
+    flex: 1 1 50%;
+    max-width: 850px;
+  }
+
+  .content_box {
+    flex: 1 1 40%;
+    max-width: 680px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 48px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Sec5 {
+    padding: 0 2rem;
+
+    .d_flex {
+      flex: 0;
+      height: 100%;
+      max-height: 100%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .route {
+      width: 90%;
+      margin-top: 1rem;
+    }
+
+    .swiper {
+      flex: 0 1 auto;
+      max-width: 100%;
+      margin: 2rem auto;
+    }
+
+    .content_box {
+      flex: 0 1 auto;
+      max-width: 100%;
+      height: auto;
+      padding: 0;
+      align-items: center;
+    }
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .Sec5 {
+    .title {
+      margin-bottom: 0;
+    }
+    .swiper {
+      margin: 1rem auto;
+    }
+  }
+}
+
+// 交通
+.Sec6 {
+  padding: 2rem 4rem;
+  color: #727171;
+
+  .route {
+    object-fit: contain;
+  }
+
+  .d_flex {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .swiper {
+    flex: 1 1 40%;
+    max-width: 850px;
+  }
+
+  .content_box {
+    flex: 1 1 40%;
+    max-width: 680px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 48px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Sec6 {
+    padding: 0 2rem;
+
+    .d_flex {
+      flex: 0;
+      height: 100%;
+      max-height: 100%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .d_md_block {
+      order: 1;
+    }
+
+    .swiper {
+      flex: 0 1 auto;
+      max-width: 100%;
+      margin: 2rem auto;
+      order: 2;
+    }
+
+    .content_box {
+      order: 3;
+      flex: 0 1 auto;
+      max-width: 100%;
+      padding: 0;
+      align-items: center;
+    }
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .Sec6 {
+    .title {
+      margin-bottom: 0;
+    }
+    .swiper {
+      margin: 1rem auto;
+    }
+  }
+}
+
+
+// 商圈
+.Sec7 {
+  padding: 0 2rem;
+  color: #727171;
+
+  .swiper {
+    padding: 0 2.8rem;
+  }
+
+  .swiper-button-next {
+    right: 0;
+    color: #92B3C7;
+  }
+
+  .swiper-button-prev {
+    left: 0;
+    color: #92B3C7;
+  }
+
+  .swiper-button-next, 
+  .swiper-button-prev {
+    transform: translateY(-2rem);
+  }
+
+  .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .sub_title {
+      margin-top: 2rem;
+    }
+  }
+
+  .content_box {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Sec7 {
+    padding: 0 2rem;
+
+    .swiper {
+      padding: 0;
+    }
+
+    .swiper-button-next, 
+    .swiper-button-prev {
+      color: #fff;
+      transform: translateY(-2rem);
+      &::after {
+        filter: initial;
+      }
+    }
+
+    .d_flex {
+      flex: 0;
+      height: 100%;
+      max-height: 100%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .d_md_block {
+      order: 1;
+    }
+
+    .swiper {
+      flex: 0 1 auto;
+      max-width: 100%;
+      margin: 2rem auto;
+      order: 2;
+    }
+
+    .content_box {
+      order: 3;
+      flex: 0 1 auto;
+      max-width: 100%;
+      height: auto;
+      padding: 0;
+      align-items: center;
+    }
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .Sec7 {
+    .title {
+      margin-bottom: 0;
+    }
+    .swiper {
+      margin: 1rem auto;
+    }
+  }
+}
+
+
+// 團隊
+.Sec8 {
+  color: #fff;
+  padding: 0 4rem;
+
+  .vertical_write {
+    display: flex;
+    align-items: center;
+    writing-mode: vertical-lr;
+    margin-right: 1rem;
+  }
+
+  .info {
+    max-width: 35%;
+    margin-right: 2rem;
+  }
+
+  .work {
+    max-height: 80vh;
+  }
+
+  .info_container {
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    .profile {
+      margin-right: 1rem;
+      margin-bottom: 1rem;
+      max-height: 320px;
+
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Sec8 {
+    padding: 1rem 0;
+
+    .slide {
+      padding: 0 2rem;
+    }
+
+    .fp-controlArrow.fp-next {
+      height: calc(50vh + 16px);
+      right: calc(50% - 7rem);
+      background-size: auto 20px;
+      background-position: center bottom;
+      opacity: 0;
+    }
+
+    .fp-controlArrow.fp-prev {
+      height: calc(50vh + 16px);
+      left: calc(50% - 7rem);
+      background-size: auto 20px;
+      background-position: center bottom;
+      opacity: 0;
+    }
+
+    .content_wrapper {
+      margin-bottom: 1rem;
+    }
+
+    .content {
+      flex: 1;
+      margin-right: 1rem;
+
+      .sub_title {
+        text-align: left;
+        line-height: 1.5;
+        font-size: 17px;
+      }
+
+      .para {
+        font-size: 13px;
+      }
+    }
+
+    .profile {
+      max-height: 210px;
+    }
+
+    .title_wrapper {
+      margin-top: 1rem;
+
+      .sub_title {
+        margin: 0 1rem;
+      }
+
+      .arrow {
+        width: 16px;
+        height: 16px;
+      }
+    }
+
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  .Sec8 {
+    padding: 0;
+    .content_wrapper {
+      align-items: flex-start;
+    }
+    .profile {
+      max-height: 120px;
+    }
+    .para {
+      letter-spacing: -1px;
+    }
+    .work {
+      width: 100%;
+      max-width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .Sec8 {
+    .work {
+      max-height: 260px;
+    }
+  }
+}

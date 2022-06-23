@@ -15,102 +15,117 @@ h1, h2, h3, h4, h5, h6 {
 }
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 p {
   margin: 0;
 }
-.d_none {
+picture {
+  max-width: 100%;
+}
+.d-none {
   display: none !important;
 }
-.d_block {
+.d-block {
   display: block;
 }
-.d_flex {
+.d-flex {
   display: flex;
 }
-.align_center {
+.align-center {
   align-items: center;
 }  
-.justify_between {
+.justify-between {
   justify-content: space-between;
 }
-.justify_center {
+.justify-center {
   justify-content: center;
 }
-.justify_start {
+.justify-start {
   justify-content: flex-start;
 }
-.bg_primary {
+.bg-primary {
   background-color: #92B3C7;
 }
-.mt_3 {
+.mt-3 {
   margin-top: 1.5rem;
 }
-.mt_4 {
+.mt-4 {
   margin-top: 2rem;
 }
-.mb_3 {
+.mb-3 {
   margin-bottom: 1.5rem;
 }
-.mb_4 {
+.mb-4 {
   margin-bottom: 2rem;
 }
-.mr_2 {
+.mr-2 {
   margin-right: 1rem;
 }
 .title {
   font-size: 36px;
   font-weight: bold;
   line-height: 1.2;
-  margin-bottom: 3rem;
+  white-space: nowrap;
+  color: #646262;
 }
-.sub_title {
-  font-size: 28px;
+.sub-title {
+  font-size: 24px;
   font-weight: bold;
   line-height: 1.2;
-  margin-bottom: 1rem;
 }
 .para {
   font-size: 16px;
   line-height: 1.8;
   text-align: justify;
+  color: #595757;
+}
+.deco-line {
+  margin: 0;
+  border: none;
+  width: 100%;
+  height: 1px;
+  background-color: #AE0D23;
+  &.vertical {
+    width: 1px;
+    height: 96px;
+    margin: 0 1.5rem;
+  }
 }
 
+
 @media (max-width: 768px) {
-  .d_md_none {
+  .d-md-none {
     display: none !important;
   }
-  .d_md_block {
+  .d-md-block {
     display: block !important;
     img {
       max-width: 100%;
     }
   }
-  .d_md_flex {
+  .d-md-flex {
     display: flex !important;
     img {
       max-width: 100%;
     }
   }
-  .d_md_inline {
+  .d-md-inline {
     display: inline-block !important;
   }
-  .mb_md_0 {
+  .mb-md-0 {
     margin-bottom: 0;
   }
   .title {
-    font-size: 24px;
-    margin-bottom: 1rem;
-    text-align: center;
+    font-size: 26px;
   }
-  .sub_title {
+  .sub-title {
     font-size: 18px;
-    margin-bottom: 0.5rem;
-    text-align: center;
   }
   .para {
     font-size: 14px;
-    line-height: 1.6;
+    line-height: 1.5;
   }
 }
 
@@ -119,7 +134,7 @@ p {
   .title {
     font-size: 20px;
   }
-  .sub_title {
+  .sub-title {
     font-size: 15px;
   }
   .para {
