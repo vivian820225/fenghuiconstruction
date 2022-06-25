@@ -422,6 +422,7 @@ picture {
 }
 
 .Sec3 {
+  position: relative;
   height: 100vh;
 }
 

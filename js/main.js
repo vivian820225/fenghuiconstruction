@@ -1,3 +1,25 @@
+let timer = null
+let callback = ([entry]) => {
+    const toast = document.querySelector('.toast')
+    if (entry.isIntersecting) {
+      toast.classList.add('active')
+      timer = setTimeout(() => {
+        toast.classList.remove('active')
+       }, 5 * 1000);
+      return
+    }
+    clearTimeout(timer)
+    toast.classList.remove('active')
+}
+
+const options = { threshold: 0 }
+
+let observer = new IntersectionObserver(callback, options)
+
+const section = document.querySelector('.Sec3')
+observer.observe(section)
+
+
 $(document).ready(function () {
   const swiper1 = new Swiper('#swiper-1', {
     loop: true,
