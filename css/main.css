@@ -559,7 +559,7 @@ picture {
             flex: 1 1 100%;
   }
   .Sec4 .mrt {
-    max-width: 636px;
+    max-width: 100%;
     margin-top: 2rem;
   }
   .Sec4 .swiper-button-prev {
