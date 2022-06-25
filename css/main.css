@@ -386,6 +386,7 @@ picture {
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
             align-items: stretch;
+    width: 100%;
     max-width: 636px;
     margin: 2rem auto;
     padding: 0 2rem;
