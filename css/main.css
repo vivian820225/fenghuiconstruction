@@ -513,6 +513,7 @@ picture {
 
 .Sec4 .mrt {
   max-width: 476px;
+  height: auto;
   margin-top: 3rem;
 }
 
