@@ -786,6 +786,10 @@ picture {
   }
 }
 
+.Sec7 {
+  padding-bottom: 2rem;
+}
+
 .Sec7 .comma {
   display: none;
 }
@@ -891,7 +895,7 @@ picture {
 }
 
 .reservation .d-flex {
-  padding: 0 4rem;
+  padding: 8rem 4rem 6rem 4rem;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -916,6 +920,10 @@ picture {
   color: #fff;
 }
 
+.table-wrapper .table {
+  margin-bottom: 2rem;
+}
+
 .table-wrapper .title {
   font-size: 30px;
   margin-bottom: 1rem;
@@ -923,12 +931,15 @@ picture {
 }
 
 .table-wrapper .table > thead > tr > th {
+  padding: 0;
   border: none;
 }
 
 .table-wrapper .table > tbody > tr > td {
-  border: none;
+  padding: 4px 0;
   font-size: 18px;
+  font-weight: bold;
+  border: none;
 }
 
 .call-to-action {
@@ -942,6 +953,14 @@ picture {
   max-width: 710px;
   margin: 0 auto;
   padding-bottom: 2rem;
+}
+
+.form-wrapper .form-control-wrapper {
+  margin-bottom: 4rem;
+}
+
+.form-wrapper .form-control {
+  height: 70px;
 }
 
 .form-wrapper .d-flex {
@@ -1014,13 +1033,23 @@ picture {
 }
 
 .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  color: #003F82;
+  height: 70px;
+  color: #fff;
   border-radius: initial;
-  background-color: #D3E4F5;
-  font-size: 20px;
+  background-color: #B3B4B5;
+  font-size: 18px;
   font-weight: bold;
   -webkit-transition: all .1s ease-in;
   transition: all .1s ease-in;
@@ -1028,13 +1057,14 @@ picture {
 }
 
 .btn:hover {
-  color: #D3E4F5;
-  background-color: #003F82;
+  color: #B3B4B5;
+  background-color: #fff;
 }
 
 .btn-secondary {
-  color: #003F82;
-  background-color: #D3E4F5;
+  height: 70px;
+  color: #fff;
+  background-color: #B3B4B5;
   border: 0;
   border-radius: initial;
   font-weight: bold;
@@ -1066,6 +1096,9 @@ picture {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 100%;
             flex: 1 1 100%;
+  }
+  .reservation .table-wrapper .table {
+    margin-bottom: 1rem;
   }
   .reservation .table-wrapper .title {
     font-size: 22px;
@@ -1101,10 +1134,19 @@ picture {
   .reservation {
     background: url(../images/s8/m-form-bg.jpg) center center;
   }
-  .reservation .call-to-action {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 100%;
-            flex: 1 1 100%;
+  .reservation .d-flex {
+    padding: 2rem 0;
+  }
+  .reservation .intro {
+    padding: 0 15px;
+  }
+  .form-wrapper .form-control-wrapper {
+    margin-bottom: 0;
+  }
+  .form-wrapper .form-control,
+  .form-wrapper .btn,
+  .form-wrapper .btn-secondary {
+    height: 56px;
   }
 }
 
@@ -1139,7 +1181,7 @@ picture {
 .google-map {
   max-width: 100%;
   height: 30vh;
-  max-height: 300px;
+  max-height: 200px;
   margin-bottom: 2rem;
   position: relative;
 }
@@ -1157,8 +1199,7 @@ picture {
 
 @media (max-width: 768px) {
   .google-map {
-    height: 30vh;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
