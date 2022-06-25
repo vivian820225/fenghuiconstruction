@@ -424,6 +424,23 @@ picture {
   height: 100vh;
 }
 
+.Sec3 .horizontal-scroll-container {
+  width: 100%;
+  max-width: 100%;
+  max-height: 100vh;
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+
+.Sec3 .horizontal-scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+.Sec3 .horizontal-scroll-container .scroll-img {
+  max-width: initial;
+  max-height: 100vh;
+}
+
 .Sec3 .toast {
   padding: 8px 16px;
   font-size: 13px;

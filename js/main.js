@@ -1,55 +1,4 @@
-function onImageLoaded(url, cb) {
-  let image = new Image();
-  image.src = url;
-  if (image.complete) {
-    cb(image);
-  } else {
-    image.onload = function () {
-      cb(image);
-    };
-  }
-}
-
-function checkImgOnload() {
-  
-  const panoramaSection = document.querySelector(".panorama-container");
-  let image = new Image();
-  if (innerWidth <= 768) {
-    image.src = "images/s3/m-sec3img01.jpg";
-  } else {
-    image.src = "images/s3/sec3img01.jpg";
-  }
-  // image.src = "images/s3/sec3img01.jpg";
-  console.log(image, image.width);
-  image.onload = function () {
-    onImageLoaded(`${image.src}`, function () {
-      panoramaSection.innerHTML = `<img src="${image.src}" data-width="${image.width}" data-height="${image.height}" alt="Panorama">`;
-    });
-    $(".panorama-view").panorama360({
-      sliding_controls: false,
-      bind_resize: true,
-    });
-  };
-
-}
-
 $(document).ready(function () {
-  // checkImgOnload();
-
-  $(".panorama-view").panorama360({
-    sliding_controls: false,
-    bind_resize: true,
-    start_position: 400
-  });
-
-  // 顯示提示
-  // if (window.innerWidth <= 768) {
-  //   $('#Sec4 .toast').addClass('active');
-  //   setTimeout(() => {
-  //     $('#Sec4 .toast').removeClass('active');
-  //   }, 2 * 1000);
-  // }
-
   const swiper1 = new Swiper('#swiper-1', {
     loop: true,
     autoplay: {
@@ -163,11 +112,5 @@ $(document).ready(function () {
       nextEl: '#swiper-7 .swiper-button-next',
       prevEl: '#swiper-7 .swiper-button-prev',
     },
-  });
-
-  window.addEventListener("resize", function () {
-    setTimeout(function () {
-      this.location.reload();
-    });
   });
 });
