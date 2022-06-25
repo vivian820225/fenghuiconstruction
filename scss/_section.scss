@@ -58,7 +58,7 @@
 
 @media screen and (max-width: 768px) {
   .Sec1 {
-    padding-bottom: 2rem;
+    padding: 0 0 2rem 0;
     .section-content {
       display: flex;
       flex-direction: column-reverse;
@@ -115,6 +115,7 @@
 
 @media screen and (max-width: 768px) {
   .Sec2 {
+    padding: 0;
     padding-bottom: 2rem;
     .section-content {
       display: flex;
@@ -206,9 +207,6 @@
   .deco-line {
     margin: 2rem auto;
   }
-  .swiper-pagination {
-    bottom: 6rem;
-  }
   .swiper-button-prev {
     left: 4rem;
   }
@@ -253,9 +251,6 @@
     }
     .deco-line {
       margin: 1rem auto;
-    }
-    .swiper-pagination {
-      bottom: 1rem;
     }
   }
 }
@@ -397,6 +392,7 @@
 
 @media screen and (max-width: 768px) {
   .Sec6 {
+    padding-bottom: 0;
     .swiper-slide {
       flex-direction: column;
       padding: 0;
@@ -426,9 +422,6 @@
     }
     .deco-line {
       margin: 1rem auto;
-    }
-    .swiper-pagination {
-      display: none;
     }
     .swiper-button-prev {
       left: 10px;

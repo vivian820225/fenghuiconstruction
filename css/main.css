@@ -287,7 +287,7 @@ picture {
 
 @media screen and (max-width: 768px) {
   .Sec1 {
-    padding-bottom: 2rem;
+    padding: 0 0 2rem 0;
   }
   .Sec1 .section-content {
     display: -webkit-box;
@@ -366,6 +366,7 @@ picture {
 
 @media screen and (max-width: 768px) {
   .Sec2 {
+    padding: 0;
     padding-bottom: 2rem;
   }
   .Sec2 .section-content {
@@ -502,10 +503,6 @@ picture {
   margin: 2rem auto;
 }
 
-.Sec4 .swiper-pagination {
-  bottom: 6rem;
-}
-
 .Sec4 .swiper-button-prev {
   left: 4rem;
 }
@@ -554,9 +551,6 @@ picture {
   }
   .Sec4 .deco-line {
     margin: 1rem auto;
-  }
-  .Sec4 .swiper-pagination {
-    bottom: 1rem;
   }
 }
 
@@ -728,6 +722,9 @@ picture {
 }
 
 @media screen and (max-width: 768px) {
+  .Sec6 {
+    padding-bottom: 0;
+  }
   .Sec6 .swiper-slide {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -763,9 +760,6 @@ picture {
   }
   .Sec6 .deco-line {
     margin: 1rem auto;
-  }
-  .Sec6 .swiper-pagination {
-    display: none;
   }
   .Sec6 .swiper-button-prev {
     left: 10px;
