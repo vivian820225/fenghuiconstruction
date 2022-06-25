@@ -226,7 +226,6 @@ picture {
 }
 
 .section-content {
-  padding: 6rem;
   margin: 0 auto;
 }
 
@@ -259,6 +258,10 @@ picture {
   }
 }
 
+.Sec1 {
+  padding: 8rem 6rem;
+}
+
 .Sec1 .content {
   width: 90%;
   max-width: 1500px;
@@ -276,8 +279,7 @@ picture {
   padding: 0 4rem;
 }
 
-.Sec1 .slide-img {
-  width: 90%;
+.Sec1 .slide-img img {
   max-width: 1500px;
   height: auto;
   margin: 0 auto;
@@ -295,7 +297,6 @@ picture {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
-    padding: 0;
   }
   .Sec1 .content {
     -webkit-box-orient: vertical;
@@ -321,6 +322,11 @@ picture {
   .Sec1 .swiper {
     padding: 0;
   }
+}
+
+.Sec2 {
+  padding: 6rem;
+  padding-top: 2rem;
 }
 
 .Sec2 .content {
@@ -370,7 +376,6 @@ picture {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
-    padding: 0;
   }
   .Sec2 .content {
     -webkit-box-orient: vertical;
@@ -666,6 +671,7 @@ picture {
 
 .Sec6 {
   background-color: #B3B4B5;
+  padding-bottom: 2rem;
 }
 
 .Sec6 .swiper-slide {
