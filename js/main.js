@@ -135,4 +135,29 @@ $(document).ready(function () {
       prevEl: '#swiper-7 .swiper-button-prev',
     },
   });
+
+  const swiper9 = new Swiper('#swiper-9', {
+    loop: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    
+    pagination: {
+      el: "#swiper-9 .swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '#swiper-9 .swiper-button-next',
+      prevEl: '#swiper-9 .swiper-button-prev',
+    },
+    breakpoints: {
+      768: {
+        spaceBetween: 0,
+      },
+      1024: {
+        spaceBetween: 68,
+      },
+    },
+  });
 });

@@ -14,6 +14,14 @@
   filter: drop-shadow(0 4px 4px rgba(0,0,0,0.3));
 }
 
+.swiper-button-next {
+  right: 0;
+}
+
+.swiper-button-prev {
+  left: 0;
+}
+
 .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
