@@ -930,8 +930,13 @@ picture {
   margin-bottom: 2rem;
 }
 
+.Sec9 .title {
+  color: #fff;
+}
+
 .Sec9 .para {
   max-width: 50%;
+  color: #fff;
 }
 
 .Sec9 .swiper {
