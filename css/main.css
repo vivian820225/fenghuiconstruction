@@ -282,7 +282,6 @@ picture {
     width: 60%;
   }
   .Sec0 .img-logo-2 {
-    width: 60%;
     bottom: 4rem;
   }
 }
@@ -295,7 +294,8 @@ picture {
 
 @media screen and (max-width: 375px) {
   .Sec0 .img-logo {
-    top: 8rem;
+    top: 6rem;
+    bottom: 6rem;
   }
 }
 
