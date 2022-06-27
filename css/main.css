@@ -239,9 +239,23 @@ picture {
 
 .Sec0 {
   position: relative;
-  max-height: 100vh;
+  max-width: 100%;
+  height: 100vh;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  overflow: hidden;
+}
+
+.Sec0 img {
+  margin: 0 auto;
+}
+
+.Sec0 .img-bg img {
+  max-width: initial;
+  height: 100vh;
+  width: 100vw;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .Sec0 .img-logo {
@@ -258,11 +272,30 @@ picture {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  width: 60%;
+  max-width: 900px;
 }
 
 @media screen and (max-width: 768px) {
   .Sec0 .img-logo {
-    max-width: 30%;
+    top: 8rem;
+    width: 60%;
+  }
+  .Sec0 .img-logo-2 {
+    width: 60%;
+    bottom: 4rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Sec0 .img-logo {
+    top: 25%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .Sec0 .img-logo {
+    top: 8rem;
   }
 }
 

@@ -14,10 +14,25 @@ let callback = ([entry]) => {
 
 const options = { threshold: 0 }
 
-let observer = new IntersectionObserver(callback, options)
+const observer = new IntersectionObserver(callback, options)
 
 const section = document.querySelector('.Sec3')
 observer.observe(section)
+
+function initPositionImg() {
+  const dragImg = document.querySelector('.scroll-img')
+  const positionLeft = dragImg.clientWidth / 2 - dragContainer.clientWidth / 2
+  dragContainer.scrollLeft = positionLeft
+}
+
+const ImgObserver = new ResizeObserver(([entry]) => {
+  if (entry && entry.target) {
+    initPositionImg()
+  }
+});
+
+const dragContainer = document.querySelector('.horizontal-scroll-container')
+ImgObserver.observe(dragContainer, {box: "border-box"});
 
 
 $(document).ready(function () {
