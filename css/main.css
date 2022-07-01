@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  font-family: "微軟正黑體", "Microsoft JhengHei", "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-family: "微軟正黑體", "Microsoft JhengHei", "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -294,7 +294,7 @@ picture {
 
 @media screen and (max-width: 375px) {
   .Sec0 .img-logo {
-    top: 6rem;
+    top: 4rem;
     bottom: 6rem;
   }
 }
