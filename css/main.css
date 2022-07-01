@@ -288,13 +288,13 @@ picture {
 
 @media screen and (max-width: 480px) {
   .Sec0 .img-logo {
-    top: 25%;
+    top: 15%;
   }
 }
 
 @media screen and (max-width: 375px) {
   .Sec0 .img-logo {
-    top: 4rem;
+    top: 12%;
     bottom: 6rem;
   }
 }
